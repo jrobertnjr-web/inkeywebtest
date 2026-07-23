@@ -65,8 +65,8 @@ const atAGlance: { label: string; value: string; icon: React.ReactNode }[] = [
     ),
   },
   {
-    label: "Home Base",
-    value: "Austin, TX",
+    label: "Based In",
+    value: "Austin & Tampa",
     icon: (
       <>
         <path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12Z" />

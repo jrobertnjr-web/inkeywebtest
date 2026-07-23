@@ -1,5 +1,4 @@
 import { Section } from "@/components/ui/Section";
-import { Card } from "@/components/ui/Card";
 import { reviews } from "@/content/placeholders";
 
 export function Reviews() {
@@ -8,18 +7,20 @@ export function Reviews() {
       <p className="text-sm font-semibold uppercase tracking-widest text-accent">
         What Clients Say
       </p>
-      <h2 className="mt-3 max-w-xl font-display text-2xl font-semibold sm:text-3xl">
-        Don&apos;t Take Our Word for It
-      </h2>
-      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 flex flex-col gap-8">
         {reviews.map((review) => (
-          <Card key={review.name} className="flex flex-col gap-4">
-            <p className="text-sm leading-relaxed text-foreground">&ldquo;{review.quote}&rdquo;</p>
-            <div>
-              <div className="text-sm font-semibold">{review.name}</div>
-              <div className="mt-0.5 text-xs uppercase tracking-wide text-muted">{review.event}</div>
-            </div>
-          </Card>
+          <figure key={review.name} className="max-w-3xl">
+            <span aria-hidden className="font-display text-6xl leading-none text-primary/40">
+              &ldquo;
+            </span>
+            <blockquote className="-mt-4 font-display text-xl font-medium leading-relaxed sm:text-2xl">
+              {review.quote}
+            </blockquote>
+            <figcaption className="mt-5 text-sm">
+              <span className="font-semibold">{review.name}</span>
+              <span className="text-muted"> — {review.event}</span>
+            </figcaption>
+          </figure>
         ))}
       </div>
     </Section>

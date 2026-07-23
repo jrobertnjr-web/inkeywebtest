@@ -1,19 +1,22 @@
+import Image from "next/image";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { siteConfig } from "@/content/placeholders";
 
 export function Hero() {
   return (
-    <div className="relative overflow-hidden border-b border-border bg-gradient-to-b from-surface to-background">
-      <div
+    <div className="relative overflow-hidden border-b border-border">
+      <Image
+        src="/images/gallery/mcrae-dancefloor-2.jpg"
+        alt=""
+        fill
+        priority
         aria-hidden
-        className="pointer-events-none absolute -left-24 -top-36 h-[500px] w-[500px] rounded-full bg-primary/15 blur-[80px]"
+        className="object-cover"
       />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-24 -right-20 h-[400px] w-[400px] rounded-full bg-indigo/30 blur-[80px]"
-      />
-      <Container className="relative flex flex-col items-start gap-6 py-24 sm:py-32">
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" />
+      <Container className="relative flex flex-col items-start gap-6 py-24 sm:py-36">
         <p className="text-sm font-medium uppercase tracking-widest text-accent">
           Boutique Event DJs
         </p>

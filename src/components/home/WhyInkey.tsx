@@ -35,9 +35,9 @@ export function WhyInkey() {
       <h2 className="mt-3 max-w-xl font-display text-2xl font-semibold sm:text-3xl">
         A Collective That Reads the Room
       </h2>
-      <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item) => (
-          <div key={item.title} className="bg-background px-6 py-8">
+          <div key={item.title}>
             <svg
               width="26"
               height="26"

@@ -9,12 +9,14 @@ const stats = [
 
 export function StatsStrip() {
   return (
-    <Section className="py-0 sm:py-0">
-      <div className="grid grid-cols-3 divide-x divide-border overflow-hidden rounded-2xl border border-border">
+    <Section className="py-14 sm:py-20">
+      <div className="grid grid-cols-3 gap-6 sm:gap-16">
         {stats.map((stat) => (
-          <div key={stat.label} className="bg-surface px-4 py-8 text-center">
-            <div className="font-display text-3xl font-bold sm:text-4xl">{stat.value}</div>
-            <div className="mt-1.5 text-[11px] font-medium uppercase tracking-wider text-muted">
+          <div key={stat.label} className="text-center">
+            <div className="font-display text-3xl font-bold text-primary sm:text-5xl">
+              {stat.value}
+            </div>
+            <div className="mt-2 text-[11px] font-medium uppercase tracking-[0.15em] text-muted">
               {stat.label}
             </div>
           </div>

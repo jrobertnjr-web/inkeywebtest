@@ -1,8 +1,7 @@
 import { Section } from "@/components/ui/Section";
-import { teamMembers } from "@/content/placeholders";
 
 const stats = [
-  { value: `${teamMembers.length}`, label: "Curated DJs" },
+  { value: "70+", label: "Years Combined Experience" },
   { value: "$0", label: "Consultation Fee" },
   { value: "100%", label: "À La Carte" },
 ];

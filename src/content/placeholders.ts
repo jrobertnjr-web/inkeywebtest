@@ -97,7 +97,7 @@ export const reviews = [
 export const aboutContent = {
   heading: "About inKey DJ Collective",
   body: [
-    "inKey DJ Collective started four years ago when DJ Musiek set out to build something different: a crew of DJs he already knew and trusted, brought together under one name. Between them, the collective carries over 30 years of experience behind the decks.",
+    "inKey DJ Collective started four years ago when DJ Musiek set out to build something different: a crew of DJs he already knew and trusted, brought together under one name. Between them, the collective carries over 70 years of experience behind the decks.",
     "At its core, inKey is driven by a simple passion for music and for the moments it creates. We believe great sound has the power to transform events into unforgettable memories — and we wanted to share that during the special moments that matter most to our clients. That's why we build tailored playlists instead of preset packages, and why our team spans genres from jazz to electronic and beyond, ready for whatever the moment calls for.",
   ],
 };

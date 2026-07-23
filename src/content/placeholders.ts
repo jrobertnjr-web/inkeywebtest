@@ -44,25 +44,30 @@ export const consultationMethods = [
 export const teamMembers = [
   {
     name: "James Nelson",
-    role: "DJ Musiek — Founder / Lead DJ",
+    role: "DJ Musiek — Music Experience Architect",
+    founder: true,
+    icon: "compass",
     bio: "DJ Musiek hails from Dayton, Ohio with over 30 years of experience. He draws from funk, soul, and disco influences including Ohio Players and Bootsy Collins. Now based in Austin, Texas, he describes music as \"a journey through time and emotion, a fusion of past and present that transcends boundaries.\" He performs classic funk alongside modern hits.",
     photo: "/images/team/founder.jpg",
   },
   {
     name: "Andrew Venson",
     role: "DJ Skoolz — Rhythm Professor",
+    icon: "cap",
     bio: "Born in New York, raised in California, and Texas-based on and off since the '80s, DJ Skoolz brings over 20 years of experience blending Jazz, Chillhop, and R&B. He isn't tied to one genre — Latin, country, R&B, jazz, lite rock, happy hip-hop, reggae, and house are all fair game if the crowd's feeling it. He reads the room and builds each set in real time around it, \"tuned for the musically mature ear.\"",
     photo: "/images/team/andrew-venson.jpg",
   },
   {
     name: "Jay Roseboro",
     role: "DJ Rosé — Music Sommelier",
+    icon: "wine",
     bio: "With over 20 years in the industry, DJ Rosé specializes in DJ, MC, and lighting services. Beyond music mixing, he functions as a \"seasoned lighting engineer\" creating custom designs and light shows. His expertise spans intimate weddings to corporate events and club nights, combining sound and visual elements.",
     photo: "/images/team/jay-roseboro.jpg",
   },
   {
     name: "Thomas Pinai",
     role: "DJ Kickback — Beatmatch Curator",
+    icon: "headphones",
     bio: "A Bay Area native since the 1980s, DJ Kickback explores genres spanning Latin Freestyle, 90s R&B, rap, Bachata, and indie rock. His stated mission involves crafting \"an electrifying atmosphere that lights up the room and brings smiles to faces.\" He emphasizes spreading positive energy while maintaining Bay Area musical roots.",
     photo: "/images/team/thomas-pinai.jpg",
   },

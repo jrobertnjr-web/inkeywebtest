@@ -48,9 +48,26 @@ export default function AboutPage() {
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           {teamMembers.map((member) => (
             <Card key={member.name} className="flex flex-col items-start gap-4">
-              <div className="h-24 w-24 overflow-hidden rounded-full bg-border">
-                {/* eslint-disable-next-line @next/next/no-img-element -- local placeholder SVG, swapped for real photos later */}
-                <img src={member.photo} alt={member.name} className="h-full w-full object-cover" />
+              <div className="relative h-24 w-24 shrink-0">
+                <div className="h-24 w-24 overflow-hidden rounded-full bg-border">
+                  {/* eslint-disable-next-line @next/next/no-img-element -- local placeholder SVG, swapped for real photos later */}
+                  <img src={member.photo} alt={member.name} className="h-full w-full object-cover" />
+                </div>
+                <div className="absolute -bottom-1.5 -right-1.5 flex h-11 w-11 items-center justify-center rounded-full border-2 border-background bg-indigo shadow-lg">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--primary-hover)"
+                    strokeWidth="1.75"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden
+                  >
+                    {roleIcons[member.icon]}
+                  </svg>
+                </div>
               </div>
               <div>
                 <div className="flex flex-wrap items-center gap-2">
@@ -61,20 +78,7 @@ export default function AboutPage() {
                     </span>
                   )}
                 </div>
-                <p className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden
-                  >
-                    {roleIcons[member.icon]}
-                  </svg>
+                <p className="mt-1.5 text-sm font-semibold uppercase tracking-wide text-primary">
                   {member.role}
                 </p>
                 <p className="mt-3 text-sm text-muted">{member.bio}</p>

@@ -47,12 +47,26 @@ export default function AboutPage() {
         <h2 className="font-display text-2xl font-semibold sm:text-3xl">The Team</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="flex items-start gap-5">
-              <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full bg-border">
+            <Card key={member.name} className="relative flex items-start gap-5 overflow-hidden">
+              <svg
+                width="200"
+                height="200"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--foreground)"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="pointer-events-none absolute -bottom-10 -right-10 opacity-[0.05]"
+                aria-hidden
+              >
+                {roleIcons[member.icon]}
+              </svg>
+              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full bg-border">
                 {/* eslint-disable-next-line @next/next/no-img-element -- local placeholder SVG, swapped for real photos later */}
                 <img src={member.photo} alt={member.name} className="h-full w-full object-cover" />
               </div>
-              <div>
+              <div className="relative">
                 <div className="flex flex-wrap items-center gap-2">
                   <h3 className="font-display text-lg font-semibold">{member.name}</h3>
                   {member.founder && (
@@ -61,21 +75,7 @@ export default function AboutPage() {
                     </span>
                   )}
                 </div>
-                <p className="mt-1.5 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-primary">
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="shrink-0"
-                    aria-hidden
-                  >
-                    {roleIcons[member.icon]}
-                  </svg>
+                <p className="mt-1.5 text-sm font-semibold uppercase tracking-wide text-primary">
                   {member.role}
                 </p>
                 <p className="mt-3 text-sm text-muted">{member.bio}</p>

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 
 const photos = [
+  { src: "/images/gallery/mcrae-atmosphere.jpg", alt: "Guests dancing under string lights at the McRae wedding" },
   { src: "/images/gallery/mcrae-reception-wide.jpg", alt: "Elegant reception hall with chandeliers and string lights at the McRae wedding" },
   { src: "/images/gallery/mcrae-dancefloor-1.jpg", alt: "Packed dance floor at the McRae wedding reception" },
-  { src: "/images/gallery/mcrae-atmosphere.jpg", alt: "Guests dancing under string lights at the McRae wedding" },
 ];
 
 export function MomentsStrip() {

@@ -7,6 +7,7 @@ import { MomentsStrip } from "@/components/home/MomentsStrip";
 import { VideoHighlight } from "@/components/home/VideoHighlight";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { TeamTeaser } from "@/components/home/TeamTeaser";
+import { AsSeenIn } from "@/components/home/AsSeenIn";
 import { BookingCTA } from "@/components/home/BookingCTA";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <VideoHighlight />
       <HowItWorks />
       <TeamTeaser />
+      <AsSeenIn />
       <BookingCTA />
     </>
   );

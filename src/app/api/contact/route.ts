@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "inKey DJ Collective <onboarding@resend.dev>",
+      from: "inKey DJ Collective <noreply@inkeydjcollective.com>",
       to: toEmail,
       replyTo: email,
       subject: `New consultation request from ${name}`,

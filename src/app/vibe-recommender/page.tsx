@@ -10,10 +10,12 @@ export const metadata: Metadata = {
 export default function VibeRecommenderPage() {
   return (
     <Section>
-      <h1 className="font-display text-4xl font-semibold sm:text-5xl">Vibe Recommender</h1>
+      <p className="text-sm font-semibold uppercase tracking-widest text-accent">AI-Powered · Only at inKey</p>
+      <h1 className="mt-3 font-display text-4xl font-semibold sm:text-5xl">Vibe Recommender</h1>
       <p className="mt-4 max-w-2xl text-muted">
         Answer a few quick questions about your event and we&apos;ll generate a sample genre mix and
-        playlist idea to match.
+        playlist idea to match. This is a starting point, not a booking — a real quote comes after
+        your free consultation.
       </p>
       <div className="mt-10 max-w-2xl">
         <VibeForm />

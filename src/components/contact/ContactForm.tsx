@@ -56,7 +56,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-5 rounded-2xl bg-surface p-6 sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label="Name" name="name" required autoComplete="name" />
         <Field label="Email" name="email" type="email" required autoComplete="email" />

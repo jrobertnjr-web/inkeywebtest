@@ -66,7 +66,7 @@ export function VibeForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-6 rounded-2xl bg-surface p-6 sm:p-8">
       <label className="flex flex-col gap-2 text-sm text-muted">
         Event type
         <select

@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "inKey DJ Collective <onboarding@resend.dev>",
       to: toEmail,
       replyTo: email,
@@ -53,6 +53,13 @@ export async function POST(request: NextRequest) {
         .filter(Boolean)
         .join("\n"),
     });
+
+    if (error) {
+      console.error("Resend rejected the contact email", error);
+      return NextResponse.json({ error: "Something went wrong sending your message. Please try again." }, { status: 502 });
+    }
+
+    console.log("Contact email sent", data?.id);
   } catch (error) {
     console.error("Failed to send contact email", error);
     return NextResponse.json({ error: "Something went wrong sending your message. Please try again." }, { status: 502 });

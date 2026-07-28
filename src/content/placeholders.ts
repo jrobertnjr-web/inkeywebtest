@@ -114,13 +114,12 @@ export const packagesContent = {
   ctaLabel: "Book a Free Consultation",
 };
 
-// DRAFT legal copy, written to reflect what this codebase actually does (contact form via
-// Resend, Vibe Recommender via Anthropic). Still needs an attorney review before launch, and
-// the bracketed values below need to be confirmed/filled in by the business owner.
+// Legal copy reflects what this codebase actually does (contact form via Resend, Vibe
+// Recommender via Anthropic). Deposit/cancellation terms below are pulled from the real
+// inKey booking agreement (Velasco/Alejandro proposal, Jul 2026). Recommend an attorney
+// review before relying on this in an actual dispute.
 export const legal = {
-  privacyPolicy: `Last updated: [DATE]
-
-This is a draft privacy policy and has not been reviewed by an attorney. Have it reviewed before publishing, and fill in the bracketed details below.
+  privacyPolicy: `Last updated: July 23, 2026
 
 Information We Collect
 When you submit our contact form, we collect the name, email address, event date, event type, and message you provide. When you use the Vibe Recommender tool, we collect the event type, mood, genres, guest count, and notes you enter.
@@ -149,18 +148,16 @@ We may update this policy from time to time. The current version will always be 
 Contact
 Questions about this policy can be sent to info@inkeydjcollective.com.`,
 
-  termsOfUse: `Last updated: [DATE]
-
-This is a draft terms of use and has not been reviewed by an attorney. Have it reviewed before publishing, and confirm the bracketed deposit/cancellation terms match your actual business policy — the defaults below are placeholders, not legal advice.
+  termsOfUse: `Last updated: July 23, 2026
 
 Booking & Quotes
 Pricing shown on this site is a starting range. A final quote is provided after a free consultation and is based on your event's date, duration, location, and requested services. A quote is not a confirmed booking.
 
 Deposit & Payment
-A [25%] non-refundable retainer is required to reserve your date. The remaining balance is due [7 days] before the event. A date is not held until the signed agreement and retainer are received.
+A 50% non-refundable retainer is required to reserve your date. The remaining balance is due no later than 14 days before the event. A date is not held until the signed agreement and retainer are received.
 
 Cancellations & Rescheduling
-Cancellations made more than [30 days] before the event forfeit the retainer only. Cancellations made within [30 days] of the event may be subject to additional fees as described in your signed booking agreement. We will make reasonable efforts to accommodate rescheduling requests, subject to DJ availability.
+Cancellations made more than 30 days before the event forfeit the retainer only — the remaining balance will not be charged. Cancellations made 30 days or fewer before the event remain responsible for the full remaining balance. Date changes are subject to DJ availability and must be agreed upon in writing.
 
 Equipment & Performance
 We provide professional-grade audio equipment and, where noted in your package, backup equipment on-site. We are not liable for performance issues caused by venue restrictions (power, noise ordinances, space), circumstances outside our control, or third-party vendor failures.

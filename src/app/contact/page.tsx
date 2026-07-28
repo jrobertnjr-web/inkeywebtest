@@ -25,6 +25,12 @@ export default function ContactPage() {
               {siteConfig.email}
             </a>
           </p>
+          <p className="mt-2 max-w-2xl text-muted">
+            Prefer to call or text?{" "}
+            <a href={siteConfig.phoneHref} className="text-foreground underline underline-offset-4">
+              {siteConfig.phone}
+            </a>
+          </p>
           <div className="mt-10">
             <ContactForm />
           </div>

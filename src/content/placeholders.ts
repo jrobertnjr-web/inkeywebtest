@@ -8,6 +8,8 @@ export const siteConfig = {
     "Boutique DJ services for weddings, corporate events, and celebrations — curated, not templated.", // PLACEHOLDER meta description
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://inkeydjcollective.com",
   email: "info@inkeydjcollective.com",
+  phone: "(512) 522-6023",
+  phoneHref: "tel:+15125226023",
 };
 
 export const navLinks = [

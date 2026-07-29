@@ -2,7 +2,7 @@ import { Section } from "@/components/ui/Section";
 
 export function VideoHighlight() {
   return (
-    <Section className="border-t border-border">
+    <Section className="border-t border-border" size="wide">
       <p className="text-sm font-semibold uppercase tracking-widest text-accent">Watch</p>
       <h2 className="mt-3 max-w-xl font-display text-2xl font-semibold sm:text-3xl">
         A First Dance, Set to the Room

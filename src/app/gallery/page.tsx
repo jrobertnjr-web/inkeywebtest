@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function GalleryPage() {
   return (
-    <Section>
+    <Section size="wide">
       <h1 className="font-display text-4xl font-semibold sm:text-5xl">Gallery</h1>
       <p className="mt-4 max-w-2xl text-muted">
         A look at some of the moments we&apos;ve helped create.

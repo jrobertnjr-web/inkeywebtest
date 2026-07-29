@@ -10,7 +10,7 @@ const photos = [
 
 export function MomentsStrip() {
   return (
-    <Section className="border-t border-border">
+    <Section className="border-t border-border" size="wide">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-accent">Moments</p>

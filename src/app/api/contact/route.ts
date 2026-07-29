@@ -35,23 +35,25 @@ export async function POST(request: NextRequest) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
 
+  const submissionSummary = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    eventType ? `Event type: ${eventType}` : null,
+    eventDate ? `Event date: ${eventDate}` : null,
+    musicNotes ? `Music notes: ${musicNotes}` : null,
+    "",
+    message,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
   try {
     const { data, error } = await resend.emails.send({
       from: "inKey DJ Collective <noreply@inkeydjcollective.com>",
       to: toEmail,
       replyTo: email,
       subject: `New consultation request from ${name}`,
-      text: [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        eventType ? `Event type: ${eventType}` : null,
-        eventDate ? `Event date: ${eventDate}` : null,
-        musicNotes ? `Music notes: ${musicNotes}` : null,
-        "",
-        message,
-      ]
-        .filter(Boolean)
-        .join("\n"),
+      text: submissionSummary,
     });
 
     if (error) {
@@ -63,6 +65,33 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error("Failed to send contact email", error);
     return NextResponse.json({ error: "Something went wrong sending your message. Please try again." }, { status: 502 });
+  }
+
+  try {
+    const { error: autoReplyError } = await resend.emails.send({
+      from: "inKey DJ Collective <noreply@inkeydjcollective.com>",
+      to: email,
+      replyTo: toEmail,
+      subject: "We got your request — inKey DJ Collective",
+      text: [
+        `Hi ${name},`,
+        "",
+        "Thanks for reaching out to inKey DJ Collective! We've received your request and will be in touch shortly to set up your free consultation.",
+        "",
+        "Here's a copy of what you sent us:",
+        "",
+        submissionSummary,
+        "",
+        "Talk soon,",
+        "inKey DJ Collective",
+      ].join("\n"),
+    });
+
+    if (autoReplyError) {
+      console.error("Resend rejected the auto-reply email", autoReplyError);
+    }
+  } catch (autoReplyError) {
+    console.error("Failed to send auto-reply email", autoReplyError);
   }
 
   return NextResponse.json({ ok: true });

@@ -30,7 +30,7 @@ export const footerLinks = [
 export const pricing = {
   small: 450,
   large: 2500,
-  note: "Small to large events start at $450–$2,500 respectively. Every quote is customized after a free consultation based on venue, event type, and your vision.",
+  note: "Events range from $450 for small gatherings to $2,500 for large celebrations. Every quote is customized after a free consultation based on venue, event type, and your vision.",
 };
 
 export const consultationMethods = [
@@ -49,28 +49,28 @@ export const teamMembers = [
     role: "DJ Musiek — Music Experience Architect",
     founder: true,
     icon: "compass",
-    bio: "DJ Musiek hails from Dayton, Ohio with over 30 years of experience. He draws from funk, soul, and disco influences including Ohio Players and Bootsy Collins. Now based in Austin, Texas, he describes music as \"a journey through time and emotion, a fusion of past and present that transcends boundaries.\" He performs classic funk alongside modern hits.",
+    bio: "DJ Musiek hails from Dayton, Ohio with over 30 years of experience. He draws from funk, soul, and disco influences including Ohio Players and Bootsy Collins. Now based in Austin, Texas, he describes music as “a journey through time and emotion, a fusion of past and present that transcends boundaries.” He performs classic funk alongside modern hits.",
     photo: "/images/team/founder.jpg",
   },
   {
     name: "Andrew Venson",
     role: "DJ Skoolz — Rhythm Professor",
     icon: "cap",
-    bio: "Born in New York, raised in California, and Texas-based on and off since the '80s, DJ Skoolz brings over 20 years of experience blending Jazz, Chillhop, and R&B. He isn't tied to one genre — Latin, country, R&B, jazz, lite rock, happy hip-hop, reggae, and house are all fair game if the crowd's feeling it. He reads the room and builds each set in real time around it, \"tuned for the musically mature ear.\"",
+    bio: "Born in New York, raised in California, and Texas-based on and off since the '80s, DJ Skoolz brings over 20 years of experience blending Jazz, Chillhop, and R&B. He isn't tied to one genre — Latin, country, R&B, jazz, lite rock, happy hip-hop, reggae, and house are all fair game if the crowd's feeling it. He reads the room and builds each set in real time around it, “tuned for the musically mature ear.”",
     photo: "/images/team/andrew-venson.jpg",
   },
   {
     name: "Jay Roseboro",
     role: "DJ Rosé — Music Sommelier",
     icon: "wine",
-    bio: "With over 20 years in the industry, DJ Rosé specializes in DJ, MC, and lighting services. Beyond music mixing, he functions as a \"seasoned lighting engineer\" creating custom designs and light shows. His expertise spans intimate weddings to corporate events and club nights, combining sound and visual elements.",
+    bio: "With over 20 years in the industry, DJ Rosé specializes in DJ, MC, and lighting services. Beyond music mixing, he functions as a “seasoned lighting engineer” creating custom designs and light shows. His expertise spans intimate weddings to corporate events and club nights, combining sound and visual elements.",
     photo: "/images/team/jay-roseboro.jpg",
   },
   {
     name: "Thomas Pinai",
     role: "DJ Kickback — Beatmatch Curator",
     icon: "headphones",
-    bio: "A Bay Area native since the 1980s, DJ Kickback explores genres spanning Latin Freestyle, 90s R&B, rap, Bachata, and indie rock. His stated mission involves crafting \"an electrifying atmosphere that lights up the room and brings smiles to faces.\" He emphasizes spreading positive energy while maintaining Bay Area musical roots.",
+    bio: "A Bay Area native since the 1980s, DJ Kickback explores genres spanning Latin Freestyle, 90s R&B, rap, Bachata, and indie rock. His stated mission involves crafting “an electrifying atmosphere that lights up the room and brings smiles to faces.” He emphasizes spreading positive energy while maintaining Bay Area musical roots.",
     photo: "/images/team/thomas-pinai.jpg",
   },
 ];
@@ -159,7 +159,7 @@ Deposit & Payment
 A 50% non-refundable retainer is required to reserve your date. The remaining balance is due no later than 14 days before the event. A date is not held until the signed agreement and retainer are received.
 
 Cancellations & Rescheduling
-Cancellations made more than 30 days before the event forfeit the retainer only — the remaining balance will not be charged. Cancellations made 30 days or fewer before the event remain responsible for the full remaining balance. Date changes are subject to DJ availability and must be agreed upon in writing.
+If you cancel more than 30 days before the event, you forfeit the retainer only — the remaining balance will not be charged. If you cancel 30 days or fewer before the event, you remain responsible for the full remaining balance. Date changes are subject to DJ availability and must be agreed upon in writing.
 
 Equipment & Performance
 We provide professional-grade audio equipment and, where noted in your package, backup equipment on-site. We are not liable for performance issues caused by venue restrictions (power, noise ordinances, space), circumstances outside our control, or third-party vendor failures.

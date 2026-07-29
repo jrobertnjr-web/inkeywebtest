@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: "Book a free consultation with inKey DJ Collective.",
 };
 
+const methodsList = new Intl.ListFormat("en", { style: "long", type: "conjunction" }).format(
+  consultationMethods
+);
+
 export default function ContactPage() {
   return (
     <Section>
@@ -16,8 +20,7 @@ export default function ContactPage() {
         <div>
           <h1 className="font-display text-4xl font-semibold sm:text-5xl">Contact</h1>
           <p className="mt-4 max-w-2xl text-muted">
-            Tell us about your event and we&apos;ll set up a free consultation via{" "}
-            {consultationMethods.join(", ")}.
+            Tell us about your event and we&apos;ll set up a free consultation via {methodsList}.
           </p>
           <p className="mt-2 max-w-2xl text-muted">
             Prefer email?{" "}

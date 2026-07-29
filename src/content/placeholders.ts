@@ -84,10 +84,8 @@ export const galleryImages = [
   { src: "/images/gallery/mcrae-dancefloor-1.jpg", alt: "Packed dance floor at the McRae wedding reception" },
   { src: "/images/gallery/correa-dj-booth.jpg", alt: "DJ booth with purple uplighting at the Correa reception" },
   { src: "/images/gallery/mcrae-dancefloor-2.jpg", alt: "Guests dancing under a chandelier at the McRae wedding" },
-  { src: "/images/gallery/correa-reception-wide.jpg", alt: "Full reception hall with DJ on stage at the Correa event" },
   { src: "/images/gallery/mcrae-reception-wide.jpg", alt: "Wide shot of the McRae wedding reception dance floor" },
   { src: "/images/gallery/sehl-graduation.jpg", alt: "Graduation party ballroom set up with DJ and photo booth" },
-  { src: "/images/gallery/correa-dj-green.jpg", alt: "Guests dancing under purple lights at the Correa reception" },
   { src: "/images/gallery/mcrae-atmosphere.jpg", alt: "Guests dancing under string lights at the McRae wedding" },
 ];
 
